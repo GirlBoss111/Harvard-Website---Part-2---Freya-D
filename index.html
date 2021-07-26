@@ -1,0 +1,157 @@
+<html>
+<head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Harvard University</a>
+        </div>
+        
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+        <li><a href="#campus_life">Campus Life</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#new">What's New</a></li>
+        <li><a href="#alumni">Alumni</a></li>
+        <li><a href="#contactUs">Contact Us</a></li>
+        </ul>    
+    </div>
+    </nav>
+    
+<div class="announcement">
+    <marquee id="marqueeStyle" onmouseover="this.stop();" onmouseout="this.start();">
+    *** Feel free to ask queries on school@gmail.com ***
+    </marquee>
+    </div>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7YUzkARKtVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="video" allowfullscreen></iframe>
+    
+
+    
+        <div class="container">
+        <div class="page-header" id="campus_life">
+            <h2 class="text-capitalize">Campus Life</h2>
+
+            <div class="row">
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="data:image/jpeg;base64,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">
+                    <h4 class="text-capitalize"><kbd>Museums</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize">Was established in 1895</h5>
+                    <p class="text-muted text-left">
+Harvard’s museums curate renowned collections, pioneer cutting-edge research, and offer educational experiences for everyone.</p>
+                </div>
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="https://localist-images.azureedge.net/photos/33624118377621/card/4a9dab08f1e2552f09218f4500743ed364e468d6.jpg">
+                    <h4 class="text-capitalize"><kbd>Athletics</kbd></h4>
+                    <h5 class="text-capitalize">Was established on October 7, 1874</h5>
+                    <p class="text-muted text-success text-left">Since participating in the nation's first college athletic event—a two-mile crew race against Yale in 1852—athletics have been an integral part of the campus experience and a unifying force across the entire community.</p>
+
+                </div>
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="https://mblogthumb-phinf.pstatic.net/20160511_167/culepia_1462955452539KjVoN_JPEG/2490199-Harvard-Library-0.jpg?type=w800">
+                    <h4 class=""><kbd>Libraries</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize">(Unknown)</h5>
+                    <p class="text-left text-muted">28 libraries support students and the public through vast archives and cutting-edge technologies.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="page-header" id="achievements">
+            <h2 class="text-capitalize">school achievements</h2>
+        </div>
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement1">
+            Promoting the injury field <i class="fa fa-sort-desc"></i>
+        </div>
+        <div id="school_achievement1" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+                <img src="https://i.postimg.cc/KztDSHbx/se1.jpg" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-success text-left text-capitalize">Promoted the injury field
+                </h5>
+                <p>Many of HICRC activities are specifically designed to promote the relatively new field of injury prevention.  A book, While We Were Sleeping touts the field’s many successes and heroes.  We have met with Hollywood’s creative community and given presentations to meetings of foundations, added injury questions on non-injury surveys and spent weeks at other universities teaching about injury prevention.</p>
+            </div>
+        </div>
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement2">
+            Collaborating with the community<i class="fa fa-sort-desc"></i>
+        </div>
+
+        <div id="school_achievement2" class="collapse">
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+                
+                <img src="https://i.postimg.cc/sxcP1G1L/sm2.jpg" class="img-responsive img-thumbnail">
+            </div>
+            
+            <div class="movie_text col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                <h5 class="text-success text-left text-capitalize">Great Commmunity
+                </h5>
+                <p>HICRC worked with more than sixty local, national and international institutions. Collaborations include monthly meetings with 11 community partners in Boston (e.g., Black Ministerial Alliance) and quarterly meetings with the state injury control professionals from health departments in the region.  As just a few examples of our community collaborations moving from the local to international levels, we assisted the Harvard University on protocols to identify students at risk of suicide, initiated a veterans suicide research collaborative with the Massachusetts Veterans Health Administration, helped establish a prison research collaborative across states, worked with Children’s Hospital at Dartmouth to evaluate fall injury prevention, assisted the International Association of Chiefs of Police on preventing police suicides, and assisted injury experts in Greece and the European Union writing protocols for the detection of intimate partner violence. HICRC collaborations have been called “stunning” by an external review committee.</p>
+            </div>
+        </div>
+
+
+        <div class="bg-primary  movie_head" data-toggle="collapse" data-target="#school_achievement3">
+            Academic Life at Harvard University<i class="fa fa-sort-desc"></i>
+        </div>
+
+        <div id="school_achievement3" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+                <img src="https://i.postimg.cc/zXzS67cY/sm3.jpg" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+              <h5 class="text-left text-success text-capitalize">The numorous courses it has to offer
+                </h5>
+                <p>The most popular majors at Harvard University include: Social Sciences, General; Biology/Biological Sciences, General; Mathematics, General; Computer Science; and History, General. The average freshman retention rate, an indicator of student satisfaction, is 97%.</p>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer"></div>
+    
+    <div class="container" id="contactUs">
+<div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h2 class="text-capitalize">Contact Us</h2>
+    </div>
+    
+    <div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.3820615458762!2d-71.11884878523652!3d42.37700684202506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e377427d7f0199%3A0x5937c65cee2427f0!2sHarvard%20University!5e0!3m2!1sen!2sus!4v1626997376652!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div id="details">
+    <img src="https://i.pinimg.com/originals/04/fb/ec/04fbecafbbd35f4cb6585d136e5dfe3a.png" width="300" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+        <h3>Principal Name: </h3>
+        <h4>Lawrence S. Bacow</h4>
+        <div class="contact_1">
+        <a href="mailto:school@gmail.com?Subject=Hi">
+            <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;school@gmail.com</h5>
+            </a>
+            <a href="#">
+            <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;schoolId</h5>
+            </a>
+            <a href="#">
+            <h5><i class="fa fa-phone-square"></i>&nbsp;&nbsp;5555555555</h5>
+            </a>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
